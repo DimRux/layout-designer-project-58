@@ -16,10 +16,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src:
-    local(""),
-    url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 /* open-sans-700 - latin */
@@ -27,10 +24,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src:
-    local(""),
-    url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
 /* neucha-regular - latin */
@@ -38,16 +32,14 @@
   font-family: Neucha;
   font-style: normal;
   font-weight: 400;
-  src:
-    local(""),
-    url("../fonts/neucha-v17-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/neucha-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("../fonts/Neucha-Regular.ttf") format("truetype");
 }
 
 body {
-  width: 1440px;
+  overflow-x: hidden;
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
@@ -56,6 +48,8 @@ body {
 h1,
 h2,
 h3 {
+  font-family: Neucha, sans-serif;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -72,9 +66,64 @@ h3 {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  position: relative;
   max-width: 1110px;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+/* header css style start */
+.header-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.header-background::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.header {
+  margin-top: 0;
+  margin-bottom: 185px;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.header-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  height: 525px;
+}
+
+.container-items {
+  display: flex;
+  gap: 30px;
+}
+
+.items-width {
+  width: calc(50% - 15px);
+}
+
+.button {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover {
+  background: #ea7600;
 }
