@@ -65,6 +65,11 @@ h3 {
   font-size: 34px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   position: relative;
   max-width: 1110px;
@@ -75,8 +80,6 @@ h3 {
 /* header css style start */
 .header-background {
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .header-background::before {
@@ -127,3 +130,27 @@ h3 {
 .button:hover {
   background: #ea7600;
 }
+
+/* header css style end */
+
+/* section video css style start */
+.text-center {
+  text-align: center;
+}
+
+.h2-margin {
+  margin: 0 0 30px;
+}
+
+.video-position {
+  position: relative;
+  bottom: -200px;
+  margin-top: -200px;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+
+/* section video css style end */
