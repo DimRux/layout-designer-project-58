@@ -65,6 +65,10 @@ h3 {
   font-size: 34px;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -75,6 +79,22 @@ h3 {
   max-width: 1110px;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark);
 }
 
 /* header css style start */
@@ -152,5 +172,50 @@ h3 {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-
 /* section video css style end */
+
+/* section main css style start */
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.cards {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+
+.contents {
+  max-width: 350px;
+}
+
+.card {
+  padding: 24px;
+  flex: 0 0 calc(33.3% - 68px);
+}
+
+.card:hover {
+  background-color: var(--primary);
+}
+
+.card:hover .hover-text-color {
+  color: var(--white);
+}
+
+.bg-link {
+  background-color: var(--light);
+}
+
+.font-size-52 {
+  font-size: 52px;
+}
+
+.number {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-family: Neucha, sans-serif;
+  line-height: 1;
+}
+
+/* section main css style end */
