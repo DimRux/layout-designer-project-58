@@ -74,6 +74,22 @@ h3 {
   justify-content: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 0 30px;
+}
+
+.flex-512 {
+  flex: 0 0 512px;
+}
+
+.flex-1110 {
+  flex: 0 0 1110px;
+}
+
 .container {
   position: relative;
   max-width: 1110px;
@@ -97,12 +113,20 @@ h3 {
   color: var(--primary-dark);
 }
 
+.background-light {
+  background: var(--light);
+}
+
+.background-dark {
+  background: var(--dark);
+}
+
 /* header css style start */
-.header-background {
+.background-img {
   position: relative;
 }
 
-.header-background::before {
+.background-img::before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -219,3 +243,46 @@ h3 {
 }
 
 /* section main css style end */
+
+/* section ikea-effect css style start */
+
+.section-contents {
+  max-width: 502px;
+}
+
+.about {
+  margin: 0;
+  font-family: Neucha, sans-serif;
+  font-size: 24px;
+  color: var(--dark-50);
+}
+
+.section-header {
+  margin: 0 0 30px;
+}
+
+.section-content {
+  font-size: 34px;
+}
+
+.appear {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 100px 0 20px;
+  height: 26px;
+  align-self: flex-start;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.section-text {
+  margin: 0;
+  flex: 0 0 540px;
+}
+
+/* section ikea-effect css style start */
