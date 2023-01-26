@@ -366,7 +366,7 @@ h3 {
 /* form css style start */
 
 .email {
- margin: 38px 0 9px;
+  margin: 38px 0 9px;
 }
 
 .form {
@@ -400,7 +400,7 @@ h3 {
 }
 
 .btn::before {
-  content: url(../images/send.svg);
+  content: url("../images/send.svg");
   width: 20px;
   height: 20px;
 }
