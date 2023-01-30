@@ -12,6 +12,5 @@
 
 ### Link my project:
 <p>
-    <a href="cognitive-distortions-dimrux.surge.sh">cognitive-distortions-dimrux.surge.sh</a>
+    <a href="https://cognitive-distortions-dimrux.surge.sh/">cognitive-distortions-dimrux.surge.sh</a>
 </p> 
-     
